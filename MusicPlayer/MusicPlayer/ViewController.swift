@@ -15,7 +15,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
     @IBOutlet var playPauseButton: UIButton!  //인스턴스 프로퍼티
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var progressSlider: UISlider!
-    //MARK:- 플레이어를 초기화 하는 메서드
+    //MARK: - 플레이어를 초기화 하는 메서드
     func initializedPlayer() {
         guard let soundAsset: NSDataAsset = NSDataAsset(name: "sound") else {
             print("음원 파일 에셋을 가져올 수 없습니다")
